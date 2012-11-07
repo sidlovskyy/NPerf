@@ -39,6 +39,9 @@
     <Reference Include="NSort">
       <HintPath>.\NSort.dll</HintPath>
     </Reference>
+    <Reference Include="Orc">
+      <HintPath>..\libs\Orc\Orc.dll</HintPath>
+    </Reference>
     <Reference Include="OxyPlot">
       <HintPath>.\OxyPlot.dll</HintPath>
     </Reference>
@@ -64,7 +67,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Test Classes\DictionaryTester.cs" />
+    <Compile Include="Test Classes\DateIntervalContainer.Add.Tests.cs" />
+    <Compile Include="Test Classes\DateIntervalContainerWrappers.cs" />
+    <Compile Include="Test Classes\DateIntervalContainer.IncludeOneInOne.Query.Tests.cs" />
+    <Compile Include="Test Classes\DateIntervalContainerBenchmarkBase.cs" />
     <Compile Include="Types\DateRange.cs" />
     <Compile Include="Types\DateTimeSortings.cs" />
     <Compile Include="Types\IDateRange.cs" />
@@ -120,6 +126,7 @@
       <Name>NPerf.Framework</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
